@@ -35,24 +35,24 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Startup#domain` v
   - returns a **string** that is the startup's domain
   - Once a startup is created, the domain cannot be changed.
-- `Startup#pivot`
+- `Startup#pivot`v
   - given a string of a **domain** and a string of a **name**, change the domain and name of the startup
 - `Startup.all`v
   - should return **all** of the startup instances
-- `Startup.find_by_founder`
+- `Startup.find_by_founder`v
   - given a string of a **founder's name**, returns the **first startup** whose founder's name matches
-- `Startup.domains`
+- `Startup.domains`v
   - should return an **array** of all of the different startup domains
 
 ---
 
 #### Build out the following methods on the `VentureCapitalist` class
 
-- `VentureCapitalist#name`
+- `VentureCapitalist#name`v
   - returns a **string** that is the venture capitalist's name
-- `VentureCapitalist#total_worth`
+- `VentureCapitalist#total_worth`v
   - returns a **number** that is the total worth of this investor (e.g., think of it as how much money they have)
-- `VentureCapitalist.all`
+- `VentureCapitalist.all`v
   - returns an array of all venture capitalists
 - `VentureCapitalist.tres_commas_club`
   - returns an array of all venture capitalists in the Trés Commas club (they have more then 1,000,000,000 `total_worth`)
@@ -82,20 +82,20 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Startup
 
-- `Startup#sign_contract`
+- `Startup#sign_contract`v
   - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
-- `Startup#num_funding_rounds`
+- `Startup#num_funding_rounds`v
   - Returns the total number of funding rounds that the startup has gotten
-- `Startup#total_funds`
+- `Startup#total_funds`v
   - Returns the total sum of investments that the startup has gotten
-- `Startup#investors`
+- `Startup#investors`v
   - Returns a **unique** array of all the venture capitalists that have invested in this company
-- `Startup#big_investors`
+- `Startup#big_investors`v
   - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club
 
 #### VentureCapitalist
 
-- `VentureCapitalist#offer_contract`
+- `VentureCapitalist#offer_contract`v
   - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
 - `VentureCapitalist#funding_rounds`
   - returns an array of all funding rounds for that venture capitalist
